@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Card Game!</h1>
+        <div class="player-input">
+            <label for="player1">Player 1:</label>
+            <input type="text" id="player1" placeholder="Enter your name">
+            <br>
+            <label for="player2">Player 2:</label>
+            <input type="text" id="player2" placeholder="Enter your name">
+            <br>
+            <label for="player3">Player 3:</label>
+            <input type="text" id="player3" placeholder="Enter your name">
+            <br>
+            <label for="player4">Player 4:</label>
+            <input type="text" id="player4" placeholder="Enter your name">
+            <br>
+            <button id="start-game">Start Game</button>
+        </div>
+        
+        <!-- Teams container -->
+        <div id="teams-container">
+            <div id="team1" class="team-container"></div>
+            <div id="team2" class="team-container"></div>
+        </div>
+    
+        <!-- Draw deck container and hands container -->
+        <div id="draw-deck-container">
+            <img id="draw-deck-img" src="I:/canastaProjectLIVE/CODE/images/backside.png" alt="Backside of Cards">
+
+        </div>
+        <!-- Button to appear after pressing "Start Game" -->
+        <button id="new-button" style="display: none;">Draw Card</button>
+        <div id="hands-container"></div>
+    
+        <p>Draw Deck Total Cards: <span id="draw-deck-card-count">0</span></p>
+        <p>Total Cards: <span id="total-cards"></span></p>
+
+    </div>
+
+    <script src="Canasta.js"></script>
+</body>
+</html>

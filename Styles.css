@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2ecc71; /* Green background */
+}
+
+.container {
+    position: relative; /* Change position to relative */
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#draw-deck-container {
+    position: absolute;
+    top: 20px;
+    left: 900px; /* Adjust as needed to move the container further right */
+    width: 1000px;
+}
+
+#draw-deck-img {
+    width: 100%; /* Ensure the image fills the container */
+}
+
+#draw-deck-container img {
+    width: 300px; /* Adjust as needed */
+    display: block;
+    margin: 5px; /* Adjust as needed */
+}
+
+h1 {
+    text-align: center;
+    color: #c0392b; /* Red color for details */
+}
+
+.player-input {
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #c0392b; /* Red color for button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a93226; /* Darker red color on hover */
+}
+
+.player-hand {
+    margin-bottom: 20px;
+}
+
+.team-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.team-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.team-container ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.team-container ul li {
+    margin-bottom: 10px;
+}
+
+#teams-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#draw-deck-container {
+    position: absolute;
+    top: 20px;
+    left: 900px; /* Adjust as needed to move the container further right */
+    width: 1000px;
+    margin-bottom: 20px; /* Add some bottom margin */
+}
+
+#new-button {
+    position: absolute;
+    top: 210px; /* Position it below the draw deck container */
+    left: 1010px; /* Align it with the draw deck container */
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #5f0202; /* Blue color for button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-button:hover {
+    background-color: #9e0101; /* Darker blue color on hover */
+}
+
+
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
+}
+
+.card-item {
+    margin-right: 10px; /* Adjust spacing between cards */
+}
+
+.card-image {
+    width: 60px; /* Adjust the width of the card image */
+    height: auto; /* Maintain aspect ratio */
+}
